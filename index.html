@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>yii-redirect-to-japanese-doc</title>
+</head>
+<body>
+  <script type="text/javascript">
+  if (document.referrer.includes('yii') && document.referrer.includes('guide-')) {
+    var name = location.href.split('guide-').slice(-1)[0].split('.')[0];
+    location.href = 'https://github.com/yiisoft/yii2/blob/master/docs/guide-ja/' + name + '.md';
+  } else {
+    alert('yiiのドキュメントじゃないです。もどります');
+    history.back(-1);
+  }
+  </script>
+</body>
+</html>
