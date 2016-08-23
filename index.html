@@ -5,14 +5,7 @@
 </head>
 <body>
   <h1>yii-redirect-to-japanese-doc</h1>
-  <script type="text/javascript">
-  if (document.referrer.includes('yii') && document.referrer.includes('guide-')) {
-    var name = location.href.split('guide-').slice(-1)[0].split('.')[0];
-    location.href = 'https://github.com/yiisoft/yii2/blob/master/docs/guide-ja/' + name + '.md';
-  } else {
-    alert('yiiのドキュメントじゃないです。もどります');
-    history.back(-1);
-  }
-  </script>
+  <p>下のリンクをブックマークバーにドラッグ&amp;ドロップしてね。</p>
+  <a href="javascript: if (location.href.includes('yiiframework.com') && location.href.includes('guide-')) { var name = location.pathname.split('guide-').slice(-1)[0].split('.')[0]; location.href = 'https://github.com/yiisoft/yii2/blob/master/docs/guide-ja/' + name + '.md'; } else { alert('yiiのドキュメントじゃないです'); }">Yii日本語ドキュメント表示</a>
 </body>
 </html>

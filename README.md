@@ -1,3 +1,3 @@
 # yii-redirect-to-japanese-doc
 
-document.referrer が http / https が変わると取れないのでダメ。ブックマークレットでやる
+https://y-kosuge.github.io/yii-redirect-to-japanese-doc/
